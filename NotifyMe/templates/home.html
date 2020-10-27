@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <title>Notify Me ASAP</title>
+    <body>
+        <div>
+            <form action = "" method = "POST"> 
+                {% csrf_token %}  
+                <label for="meetLink">Enter the link of the Google Meet lecture:</label>
+                <input type="text" id="meetLink" name="meetLink"><br><br>
+                <label for="searchText">Enter the text you'd like to be alerted for:</label>
+                <input type="text" id="searchText" name="searchText"><br><br>
+                <label for="phoneNo">Enter your Contact Number:</label>
+                <input type="text" id="phoneNo" name="phoneNo"><br><br>
+                <label for="alertText">Enter the body of your alert SMS:</label>
+                <input type="text" id="alertText" name="alertText"><br><br>
+                <input type="submit" value="OK">
+            </form> 
+        </div>
+    </body>
+</html>
